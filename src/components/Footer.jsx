@@ -25,7 +25,7 @@ const Footer = () => {
           <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-3xl hover:text-red-600 transition"> <FaYoutube /> </a>
         </div>
 
-        <p className='text-gray-400 text-sm font-bold text-[18px]'> © {new Date().getFullYear()} MegaStore. All rights reserved. </p>
+        <p className='text-gray-400 text-sm font-bold text-[18px]'> © 2026 MegaStore. All rights reserved. </p>
       </div>
     </footer>
   )
