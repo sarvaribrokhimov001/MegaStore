@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getCategories } from "../api/categoryApi";
 
-const Categories = () => {
+const Categories = ({selectedCategory, setSelectedCategory}) => {
   const {data: categories, isLoading, error} = useQuery({
     queryKey: ["categories"],
     queryFn: getCategories
@@ -26,7 +26,10 @@ const Categories = () => {
 
       <div className="flex justify-center gap-40">
         {categories.map((category) => (
-          <button key={category.id} className="bg-black rounded-xl flex flex-col justify-center gap-3 w-[240px] h-[180px] shrink-0 hover:bg-neutral-500">
+          <button onClick={() => setSelectedCategory(selectedCategory === category.id ? null : category.id)} 
+            key={category.id} 
+            className={`rounded-xl flex flex-col justify-center gap-3 w-[240px] h-[180px]
+            ${selectedCategory === category.id ? "bg-neutral-500" : "bg-black"}`}>
             <span className="text-8xl"> {category.icon} </span>
             <h3 className="font-bold text-lg text-white mt-2"> {category.name} </h3>
           </button>

@@ -1,19 +1,14 @@
 #app {
   height: 100%;
 }
-html,
-body {
+html, body {
   position: relative;
   height: 100%;
 }
 
 body {
   background: #000;
-  font-family:
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #fff;
   margin: 0;
@@ -29,19 +24,15 @@ body {
   text-align: center;#app {
   height: 100%;
 }
-html,
-body {
+
+html, body {
   position: relative;
   height: 100%;
 }
 
 body {
   background: #000;
-  font-family:
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #fff;
   margin: 0;
@@ -57,8 +48,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #444;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +62,6 @@ body {
 
   font-size: 18px;
   background: #444;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;

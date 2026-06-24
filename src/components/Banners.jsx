@@ -22,11 +22,11 @@ const Banners = () => {
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
+        loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
-        }}
-        loop={true}>
+        }}>
 
         {data.map((banner) => (
           <SwiperSlide key={banner.id}>

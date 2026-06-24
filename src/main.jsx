@@ -4,6 +4,8 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { StoreProvider } from "./context/StoreContext";
+import Router from './Router/Router.jsx'
 
 const queryClient = new QueryClient({
   defaultOptions : {
@@ -17,9 +19,11 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById('root')).render(
   <QueryClientProvider client={queryClient}>
+    <StoreProvider>
     <BrowserRouter>
-      <App />
+      <Router />
       <Toaster />
     </BrowserRouter>
+    </StoreProvider>
   </QueryClientProvider>
 )
